@@ -18,6 +18,9 @@
   },
   "homepage": "https://github.com/harrshini12/MyPortfolio#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "multiparty": "^4.2.2",
+    "nodemailer": "^6.4.18"
   }
 }
