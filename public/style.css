@@ -63,9 +63,28 @@ body {
     color: #fff;
     text-decoration: none;
   }
-  
+  @media (max-width: 1109px) {
+    #header{
+      display: none;
+    }
+  }
+  @media (max-width: 767px) {
+    #header{
+      display: none;
+    }
+  }
   #main {
     margin-left: 300px;
+  }
+  @media (max-width: 1109px){
+    #main {
+      margin-left: 10px;
+    }
+  }
+  @media (max-width: 767px){
+    #main {
+      margin-left: 10px;
+    }
   }
   /*--------------------------------------------------------------
   # Navigation Menu
@@ -154,10 +173,24 @@ body {
     }
   }
   
-  @media (max-width: 768px) {
+  @media (max-width: 1109px) {
     #imgSection h1 {
-      font-size: 28px;
-      line-height: 36px;
+      font-size: 40px;
+    }
+    #imgSection p {
+      top:370px;
+      font-size: 20px;
+    }
+  }
+  @media (max-width: 767px) {
+    #imgSection h1{
+      font-size: 40px;
+      right: 50px;
+    }
+    #imgSection p {
+      top:370px;
+      right: 50px;
+      font-size: 20px;
     }
   }
 /*--------------------------------------------------------------
@@ -201,6 +234,31 @@ body {
   
   .section-title p {
     margin-bottom: 0;
+    text-align: justify;
+  }
+  @media (max-width: 1109px){
+    .section{
+      padding:5px 0;
+    }
+    .section-title{
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+    .section-title h2 {
+      font-size: 25px;
+    }
+  }
+  @media (max-width: 767px){
+    .section{
+      padding:5px 0;
+    }
+    .section-title{
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+    .section-title h2 {
+      font-size: 25px;
+    }
   }
 /*--------------------------------------------------------------
 # About
@@ -237,6 +295,30 @@ body {
   }
 .Details-section-p2{
     margin-bottom: 0;
+}
+@media (max-width: 1109px){
+  #AboutImg{
+    margin-left: 10px;
+    margin-right: 20px;
+    height: 210px;
+    width: 120px;
+  }
+  .Details-section-p1 h3{
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 0px;
+  }
+  .details-list2{
+    margin-left: 20px;
+  }
+  .Details-section-p2{
+    text-align: justify;
+  }
+}
+@media (max-width: 767px){
+  .details-list2{
+    margin-left: 150px;
+  }
 }
 /*--------------------------------------------------------------
 # Resume
@@ -316,7 +398,26 @@ body {
     background: #fff;
     border: 2px solid #1f5297;
   }
-
+  @media (max-width: 1109px){
+    .expreience-div{
+      position: relative;
+      left: 50px;
+      top: 25px;
+      width: 500px;
+      margin-right: 900px;
+    }
+  }
+  @media (max-width: 767px){
+    .summary-div{
+      position: static;
+    }
+    .education-div{
+      position: static;
+    }
+    .expreience-div{
+      position: static;
+    }
+  }
 /*--------------------------------------------------------------
 # skills
 --------------------------------------------------------------*/
@@ -329,6 +430,11 @@ body {
   width: 70px;
   margin: 50px;
 }
+@media (max-width: 1109px){
+  .skills-container{
+    margin-top: 100px;
+  }
+}
 /*--------------------------------------------------------------
 # Work Sample
 --------------------------------------------------------------*/
@@ -339,6 +445,15 @@ body {
   margin-right: 100px;
   margin-top: 40px;
   border-radius: 50px;
+}
+@media (max-width: 1109px){
+  .projectImage{
+    height: 150px;
+    width: 200px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 40px;
+  }
 }
 /*--------------------------------------------------------------
 # Contact
@@ -418,7 +533,54 @@ body {
 .form-email{
   display: inline-block;
 }
-
+@media (max-width: 1109px){
+  .contactDetails{
+    margin-left: 5px;
+  }
+  .contactform{
+    display: inline-block;
+    position: absolute;
+    top: 5285px;
+    margin-left: 5px;
+    height: 520px;
+    width: 630px;
+  }
+  .form-email{
+    display: block;
+  }
+  .contact .contact-form input {
+    height: 30px;
+    width: 300px;
+    margin-bottom: 3px;
+  }
+  .contact .contact-form textarea {
+    height: 100px;
+    width: 350px;
+    margin-top: 7px;
+  }
+  .contact .contact-form button[type="submit"]{
+    margin-left: 20%;
+  }
+}
+@media (max-width: 767px){
+  .contactform{
+    display: block;
+    top: 7010px;
+    width: 400px;
+  }
+  .contactDetails{
+    height: 320px;
+    width: 400px;
+  }
+  .contact .contact-form textarea {
+    height: 100px;
+    width: 280px;
+    margin-top: 7px;
+  }
+  .contact .contact-form button[type="submit"]{
+    margin-left: 25%;
+  }
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -426,4 +588,6 @@ body {
   float: right;
   height: 50px;
   width: 50px;
+}
+@media (max-width: 767px){
 }
