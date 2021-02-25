@@ -1,7 +1,7 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-body {
+  body {
     font-family: "Open Sans", sans-serif;
     color: #272829;
   }
@@ -9,7 +9,7 @@ body {
   a {
     color: #149ddd;
     text-decoration: none;
-  }
+  } 
   
   a:hover {
     color: #37b3ed;
@@ -23,9 +23,9 @@ body {
     max-width: 100%;
     overflow-x: hidden;
   }
-  /*--------------------------------------------------------------
+/*--------------------------------------------------------------
   # Header
-  --------------------------------------------------------------*/
+--------------------------------------------------------------*/
   #header {
     position: fixed;
     top: 0;
@@ -63,33 +63,51 @@ body {
     color: #fff;
     text-decoration: none;
   }
+
+  .social-links{
+    margin-left: 75px;
+  }
+
+  .social-links-img{
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    margin-left: 5px;
+  }
+
   @media (max-width: 1109px) {
     #header{
       display: none;
     }
   }
+
   @media (max-width: 767px) {
     #header{
       display: none;
     }
   }
+/*--------------------------------------------------------------
+  # Main
+--------------------------------------------------------------*/
   #main {
     margin-left: 300px;
   }
+
   @media (max-width: 1109px){
     #main {
       margin-left: 10px;
     }
   }
+
   @media (max-width: 767px){
     #main {
       margin-left: 10px;
     }
   }
-  /*--------------------------------------------------------------
+/*--------------------------------------------------------------
   # Navigation Menu
-  --------------------------------------------------------------*/
-  /* Desktop Navigation */
+--------------------------------------------------------------*/
+/* Desktop Navigation */
   .nav-menu {
     padding-top: 30px;
   }
@@ -121,10 +139,10 @@ body {
     text-decoration: none;
     color: #fff;
   }
-  /*--------------------------------------------------------------
+/*--------------------------------------------------------------
 # My profile Section
 --------------------------------------------------------------*/
-#imgSection {
+  #imgSection {
     width: 100%;
     height: 100vh;
     background: url("images/timelineImage.JPG") top center;
@@ -182,6 +200,7 @@ body {
       font-size: 20px;
     }
   }
+
   @media (max-width: 767px) {
     #imgSection h1{
       font-size: 40px;
@@ -196,7 +215,7 @@ body {
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
-.section {
+  .section {
     padding: 60px 0;
     overflow: hidden;
   }
@@ -236,6 +255,7 @@ body {
     margin-bottom: 0;
     text-align: justify;
   }
+
   @media (max-width: 1109px){
     .section{
       padding:5px 0;
@@ -248,6 +268,7 @@ body {
       font-size: 25px;
     }
   }
+
   @media (max-width: 767px){
     .section{
       padding:5px 0;
@@ -263,85 +284,81 @@ body {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
-#AboutImg{
+  #AboutImg{
     float:left;
     margin-left: 50px;
     margin-right: 40px;
-    height: 360px;
+    height: 380px;
     width: 250px;
-}
-.Details-section-p1{
+  } 
+
+  .Details-section-p1{
     margin-left: 100px;
     margin-right: 10px;
-}
-.Details-section-p1 h3{
+  }
+
+  .Details-section-p1 h3{
     font-weight: 700;
     font-size: 26px;
+    margin-top: 0;
     color: #173b6c;
-}
-.details-list1{
-    display: inline-block;
-}
-.details-list2{
-    display: inline-block;
-    margin-left: 80px;
-}
-.details-list1 ul , .details-list2 ul {
+  }
+
+  .details-list ul {
     list-style: none;
     padding: 0;
   }
-.details-list1 ul li, .details-list2 ul li {
+
+  .details-list ul li{
     padding-bottom: 10px;
   }
-.Details-section-p2{
+
+  .Details-section-p2{
     margin-bottom: 0;
-}
-@media (max-width: 1109px){
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 10px;
+  }
+
+  @media (max-width: 1109px){
   #AboutImg{
     margin-left: 10px;
     margin-right: 20px;
-    height: 210px;
-    width: 120px;
+    height: 220px;
+    width: 140px;
   }
   .Details-section-p1 h3{
     font-weight: 700;
     font-size: 20px;
-    margin-top: 0px;
-  }
-  .details-list2{
-    margin-left: 20px;
   }
   .Details-section-p2{
     text-align: justify;
+    margin-left: 10px;
   }
-}
-@media (max-width: 767px){
-  .details-list2{
-    margin-left: 150px;
   }
-}
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
-.summary-div{
+  .resumecontainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  }
+
+  .education-div{
     position: relative;
     left: 50px;
-    width: 500px;
-}
-.education-div{
-    position: relative;
-    left: 50px;
-    width: 500px;
-    margin-right: 600px;
-}
-.expreience-div{
+    width: 430px;
+  }
+
+  .expreience-div{
   position: absolute;
   left: 900px;
-  top: 1625px;
-  width: 500px;
-  margin-right: 900px;
-}
-.resume .resume-title {
+  top: 1635px;
+  width: 430px;
+  }
+
+  .resume .resume-title {
     font-size: 26px;
     font-weight: 700;
     margin-top: 20px;
@@ -381,6 +398,8 @@ body {
   
   .resume .resume-item ul li {
     padding-bottom: 10px;
+    text-align: justify;
+
   }
   
   .resume .resume-item:last-child {
@@ -398,19 +417,16 @@ body {
     background: #fff;
     border: 2px solid #1f5297;
   }
+
   @media (max-width: 1109px){
     .expreience-div{
       position: relative;
-      left: 50px;
+      left: 100px;
       top: 25px;
-      width: 500px;
-      margin-right: 900px;
     }
   }
+
   @media (max-width: 767px){
-    .summary-div{
-      position: static;
-    }
     .education-div{
       position: static;
     }
@@ -421,97 +437,130 @@ body {
 /*--------------------------------------------------------------
 # skills
 --------------------------------------------------------------*/
-.skills-container{
-  margin-top: 300px;
-}
-.slillslogo
-{
+  .skills-container{
+  margin-top: 340px;
+  }
+
+  .skillslogo
+  {
   height: 70px;
   width: 70px;
   margin: 50px;
-}
-@media (max-width: 1109px){
+  }
+
+  @media (max-width: 1109px){
   .skills-container{
     margin-top: 100px;
   }
-}
+  }
 /*--------------------------------------------------------------
 # Work Sample
 --------------------------------------------------------------*/
-.projectImage{
-  height: 150px;
-  width: 200px;
-  margin-left: 150px;
-  margin-right: 100px;
-  margin-top: 40px;
-  border-radius: 50px;
-}
-@media (max-width: 1109px){
-  .projectImage{
-    height: 150px;
-    width: 200px;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 40px;
+  .projectImage
+  {
+    width: 300px; 
+    height: 200px;
+    border-radius: 20px;
   }
-}
+
+  .cardcontainer
+  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .card{
+  width: 300px; 
+  height: 300px;
+  background-color:  #173b6c;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 50px;
+  margin-right: 150px;
+  border-radius: 20px;
+  color: #fff;
+  }
+
+  .card h1{
+  text-align: center;
+  }
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
-.contact{
+  .contact{
   padding-bottom: 30px;
-}
-.contact .info {
+  }
+
+  .contactContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  }
+
+  .contact .info {
   padding: 10px;
   background: #fff;
-}
-.contact .info h4 {
+  }
+
+  .contact .info h4 {
   padding: 0 0 0 30px;
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
   color: #050d18;
-}
-.contact .info p {
+  }
+
+  .contact .info p {
   padding: 0 0 10px 30px;
   margin-bottom: 20px;
   font-size: 14px;
   color: #173b6c;
-}
-.contactDetails{
+  }
+
+  .contactDetails{
   margin-left: 55px;
+  margin-bottom: 60px;
   height: 520px;
   width: 300px;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
-  display: inline-block;
-}
-.contactform{
-  display: inline-block;
-  position: absolute;
-  top: 4200px;
-  margin-left: 30px;
+  float: left;
+  }
+
+  .contactform{
+  float:right;
+  margin-bottom: 60px;
+  margin-left: 50px;
   height: 520px;
   width: 630px;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
-}
-.contact .contact-form label{
+  }
+
+  .clear:after{
+  clear:both;
+  }
+
+  .contact .contact-form label{
   font-size: 18px;
   font-weight: 600;
   color: #050d18;
   margin: 10px;
-}
-.contact .contact-form input {
+  }
+
+  .contact .contact-form input {
   height: 44px;
   width: 260px;
   margin: 10px;
-}
-.contact .contact-form textarea {
+  }
+
+  .contact .contact-form textarea {
   padding: 10px 15px;
   height: 150px;
   width: 550px;
   margin: 10px;
-}
-.contact .contact-form button[type="submit"] {
+  }
+
+  .contact .contact-form button[type="submit"] {
   background: #149ddd;
   border: 0;
   padding: 10px 24px;
@@ -520,28 +569,29 @@ body {
   border-radius: 4px;
   text-align: center;
   margin-left: 40%;
-}
-.contact .contact-form button[type="submit"]:hover {
+  }
+
+  .contact .contact-form button[type="submit"]:hover {
   background: #37b3ed;
-}
-.form-group{
+  }
+
+  .form-group{
   padding: 10px;
-}
-.form-name{
+  }
+
+  .form-name{
   display: inline-block;
-}
-.form-email{
+  }
+
+  .form-email{
   display: inline-block;
-}
-@media (max-width: 1109px){
+  }
+
+    @media (max-width: 1109px){
   .contactDetails{
     margin-left: 5px;
   }
   .contactform{
-    display: inline-block;
-    position: absolute;
-    top: 5285px;
-    margin-left: 5px;
     height: 520px;
     width: 630px;
   }
@@ -561,11 +611,11 @@ body {
   .contact .contact-form button[type="submit"]{
     margin-left: 20%;
   }
-}
-@media (max-width: 767px){
+  }
+
+  @media (max-width: 767px){
   .contactform{
-    display: block;
-    top: 7010px;
+    margin-left: 10px;
     width: 400px;
   }
   .contactDetails{
@@ -580,14 +630,27 @@ body {
   .contact .contact-form button[type="submit"]{
     margin-left: 25%;
   }
-}
+  }
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
-.back-to-top img{
-  float: right;
+  .back-to-top img{
   height: 50px;
   width: 50px;
-}
-@media (max-width: 767px){
-}
+  border-radius: 50px;
+  }
+
+  #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  }
+
+  #myBtn:hover {
+  border-radius: 50px;
+  background-color: gainsboro;
+  }
