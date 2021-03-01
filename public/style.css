@@ -351,7 +351,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   }
-
+  
   .expreience-div{
     position: relative;
     left: 50px;
@@ -361,7 +361,7 @@
   .education-div{
   position: absolute;
   left: 900px;
-  top: 1725px;
+  top: 1635px;
   width: 430px;
   }
 
