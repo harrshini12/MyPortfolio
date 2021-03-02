@@ -5,9 +5,11 @@ require("dotenv").config();
 
 const app = express()
 
-app.use(express.static(__dirname + '/public'))
+app.route("/").get(function (req, res) {
+  res.sendFile(process.cwd() + "/public/index.html");
+});
 
-app.listen(process.env.PORT || 3000, 
+app.listen(process.env.PORT || 5000, 
 () => console.log("Server is running..."));
 
 const transporter = nodemailer.createTransport({
