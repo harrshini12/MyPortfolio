@@ -5,6 +5,8 @@ require("dotenv").config();
 
 const app = express()
 
+app.use(express.json())
+
 app.use(express.static(__dirname + '/public'))
 
 app.listen(process.env.PORT || 5000, 
@@ -47,9 +49,9 @@ transporter.verify(function (error, success) {
       transporter.sendMail(mail, (err, data) => {
         if (err) {
           console.log(err);
-          res.status(500).send("Something went wrong.");
+          res.status(500).json({status:'Something went wrong'});
         } else {
-          res.status(200).send("Email successfully sent to recipient!");
+          res.status(200).json({status: 'success'});
         }
       });
     });
