@@ -9,9 +9,6 @@ app.use(express.json())
 
 app.use(express.static(__dirname + '/public'))
 
-app.listen(process.env.PORT || 5000, 
-() => console.log("Server is running..."));
-
 const transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
     port: 465,
@@ -56,3 +53,6 @@ transporter.verify(function (error, success) {
       });
     });
   });
+
+app.listen(process.env.PORT || 5000, 
+() => console.log("Server is running..."));
