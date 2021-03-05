@@ -132,7 +132,7 @@
     transition: 0.3s;
     font-size: 15px;
     text-decoration: none;
-    margin-left: 30px;
+    margin-left: 40px;
   }
   
   .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
@@ -361,7 +361,7 @@
   .education-div{
   position: absolute;
   left: 900px;
-  top: 1635px;
+  top: 1625px;
   width: 430px;
   }
 
@@ -483,8 +483,8 @@
   background-color:  #173b6c;
   margin-bottom: 10px;
   margin-top: 10px;
-  margin-left: 50px;
-  margin-right: 150px;
+  margin-left: 70px;
+  margin-right: 80px;
   border-radius: 20px;
   color: #fff;
   }
@@ -504,10 +504,6 @@
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
-  .contact{
-  padding-bottom: 30px;
-  }
-
   .contactContainer{
   display: flex;
   flex-direction: row;
@@ -667,6 +663,21 @@
   }
 
   #myBtn:hover {
-  border-radius: 50px;
-  background-color: gainsboro;
+  border-radius: 40px;
+  background-color:   #173b6c;
   }
+/*--------------------------------------------------------------
+# About Portfolio
+--------------------------------------------------------------*/
+.about_portfolio{
+  margin-bottom: 40px;
+}  
+.about_portfolio h3{
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 50px;
+}
+.about_portfolio span{
+    margin-left: 50px;
+}
