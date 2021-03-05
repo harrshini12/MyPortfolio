@@ -291,7 +291,9 @@
     height: 380px;
     width: 250px;
   } 
-
+  .clear:after{
+    clear:both;
+    }
   .Details-section-p1{
     margin-left: 100px;
     margin-right: 10px;
@@ -361,7 +363,7 @@
   .education-div{
   position: absolute;
   left: 900px;
-  top: 1625px;
+  top: 1565px;
   width: 430px;
   }
 
