@@ -539,115 +539,22 @@
 
   .contactDetails{
   margin-left: 55px;
-  margin-bottom: 60px;
-  height: 520px;
+  height: 330px;
   width: 300px;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
   float: left;
   }
 
-  .contactform{
-  float:right;
-  margin-bottom: 60px;
-  margin-left: 50px;
-  height: 520px;
-  width: 630px;
-  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
-  }
-
-  .clear:after{
-  clear:both;
-  }
-
-  .contact .contact-form label{
-  font-size: 18px;
-  font-weight: 600;
-  color: #050d18;
-  margin: 10px;
-  }
-
-  .contact .contact-form input {
-  height: 44px;
-  width: 260px;
-  margin: 10px;
-  }
-
-  .contact .contact-form textarea {
-  padding: 10px 15px;
-  height: 150px;
-  width: 550px;
-  margin: 10px;
-  }
-
-  .contact .contact-form button[type="submit"] {
-  background: #149ddd;
-  border: 0;
-  padding: 10px 24px;
-  color: #fff;
-  transition: 0.4s;
-  border-radius: 4px;
-  text-align: center;
-  margin-left: 40%;
-  }
-
-  .contact .contact-form button[type="submit"]:hover {
-  background: #37b3ed;
-  }
-
-  .form-group{
-  padding: 10px;
-  }
-
-  .form-name{
-  display: inline-block;
-  }
-
-  .form-email{
-  display: inline-block;
-  }
-
-    @media (max-width: 1109px){
+@media (max-width: 1109px){
   .contactDetails{
     margin-left: 5px;
   }
-  .contactform{
-    height: 520px;
-    width: 630px;
-  }
-  .form-email{
-    display: block;
-  }
-  .contact .contact-form input {
-    height: 30px;
-    width: 300px;
-    margin-bottom: 3px;
-  }
-  .contact .contact-form textarea {
-    height: 100px;
-    width: 350px;
-    margin-top: 7px;
-  }
-  .contact .contact-form button[type="submit"]{
-    margin-left: 20%;
-  }
   }
 
-  @media (max-width: 767px){
-  .contactform{
-    margin-left: 10px;
-    width: 400px;
-  }
+@media (max-width: 767px){
   .contactDetails{
     height: 320px;
     width: 400px;
-  }
-  .contact .contact-form textarea {
-    height: 100px;
-    width: 280px;
-    margin-top: 7px;
-  }
-  .contact .contact-form button[type="submit"]{
-    margin-left: 25%;
   }
   }
 /*--------------------------------------------------------------
