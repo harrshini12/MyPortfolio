@@ -503,6 +503,11 @@
   .card span{
     padding: 10px;
   }
+  @media (max-width: 767px){
+    .card{
+      margin-left: 10px;
+      }
+  }
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
@@ -679,7 +684,13 @@
   font-size: 18px;
   font-weight: 600;
   margin-left: 50px;
+  color: #050d18;
 }
 .about_portfolio span{
     margin-left: 50px;
+}
+@media (max-width: 1109px){
+  .about_portfolio h3{
+    margin-left: 1px;
+  }
 }

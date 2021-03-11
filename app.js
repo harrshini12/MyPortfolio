@@ -10,8 +10,8 @@ app.use(express.json())
 app.use(express.static(__dirname + '/public'))
 
 const transporter = nodemailer.createTransport({
-    host: "smtp.gmail.com",
-    port: 465,
+    host: "smtp-mail.outlook.com",
+    port: 587,
     secure: true,
     auth: {
       user: process.env.EMAIL,
