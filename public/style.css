@@ -503,6 +503,9 @@
   .card span{
     padding: 10px;
   }
+  .cardDetails a, .cardDetails a:hover {
+    color: #fff;
+  }
   @media (max-width: 767px){
     .card{
       margin-left: 10px;
