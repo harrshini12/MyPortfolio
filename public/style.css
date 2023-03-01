@@ -363,7 +363,7 @@
   .education-div{
   position: absolute;
   left: 900px;
-  top: 1725px;
+  top: 1760px;
   width: 430px;
   }
 
@@ -455,6 +455,17 @@
   height: 70px;
   width: 70px;
   margin: 50px;
+  }
+  .skillslogoForRuby
+  {
+  height: 85px;
+  width: 85px;
+  margin: 40px;
+  }
+  .skillslogoForUi{
+    height: 85px;
+  width: 120px;
+  margin: 40px;
   }
 
   @media (max-width: 1109px){
